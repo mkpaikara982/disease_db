@@ -7,7 +7,7 @@ document.querySelector('#dis_b').addEventListener('click',(e)=>{
     let prevention = document.querySelector('#prevention').value
     let ref = document.querySelector('#ref').value
 
-    let new_disease = {diseasename: dname, did:mid,symptoms:symptoms,medicine:medicine,prevention:prevention,ref:ref,status: "false"}
+    let new_disease = {diseasename: dname, did:mid,symptoms:symptoms,medicine:medicine,prevention:prevention,reference:ref,status: "false"}
 
     axios.post('http://localhost:3000/disease',new_disease,{
         headers:{

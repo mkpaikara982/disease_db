@@ -13,8 +13,6 @@ document.querySelector('#reg_b').addEventListener('click',(e)=>{
             'Content-type':'application/json'
         }
     }).then((res)=>{
-        console.log(res.data)
-        console.log(emaila)
         window.location.href = "login.html"
     })
 
