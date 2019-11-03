@@ -1,34 +1,30 @@
 <html>
     <head>
         <title>Search</title>
-        <style></style>
-        <script></script>
+        <style>ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+          }
+          
+          li {
+            float: left;
+          }</style>
     </head>
     <body>
-        <nav></nav>
+        <nav>
+            <ul>
+                <li><a href="upload.html">|| 1.Upload  ||   2.</a></li>
+                <li><a href="upload.html">Search ||</a></li>
+            </ul>
+        </nav>
         <div class="container">
             <!-- Contains disease data approved by admin. -->
-            <table>
-                <tr>
-                    <th>Serial No.</th>
-                    <th>Disease Name</th>
-                    <th>Affected Animal</th>
-                    <th>Symptoms</th>
-                    <th>Medicine</th>
-                    <th>Prevention</th>
-                    <th>Reference</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+            <div id="display_dis"></div>
         </div>
         <footer></footer>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script type="text/javascript" src="js/uploadpost.js"></script>
     </body>
 </html>

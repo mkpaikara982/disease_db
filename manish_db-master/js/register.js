@@ -6,7 +6,7 @@ document.querySelector('#reg_b').addEventListener('click',(e)=>{
     let age = document.querySelector('#age').value
     let uni = document.querySelector('#uni').value
 
-    let new_user = {username: name, password:pass,age:Number(age),email:email,edu:edu,uni:uni}
+    let new_user = {username: name, password:pass,age:Number(age),email:email,education:edu,university:uni}
 
     axios.post('https://localhost:3000/users',new_user,{
         headers:{

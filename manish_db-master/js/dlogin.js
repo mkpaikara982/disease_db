@@ -1,5 +1,5 @@
 let get_all_users=()=>{
-    return axios.get('https://localhost:3000/users').then((res)=>{
+    return axios.get('https://localhost:3000/admin').then((res)=>{
         console.log(res.data)
         return res.data
     })

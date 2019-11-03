@@ -1,39 +1,55 @@
 <html>
     <head>
         <title>Upload</title>
-        <style></style>
+        <style>ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+              }
+              
+              li {
+                float: left;
+              }</style>
         <script></script>
     </head>
     <body>
+            <nav>
+                    <ul>
+                        <li><a href="upload.html">|| 1.Upload  ||   2.</a></li>
+                        <li><a href="upload.html">Search ||</a></li>
+                    </ul>
+                </nav><br>
         <div>
             <form>
                 <table>
                     <tr>
                         <td>Disease Name</td>
-                        <td><input type="text" name="dname"></td>
-                    </tr>
-                    <tr>
-                        <td>Organism Affected</td>
-                        <td><input type="text" name="oname"></td>
+                        <td><input type="text" name="dname" id="dname"></td>
                     </tr>
                     <tr>
                         <td>Symptoms</td>
-                        <td><input type="text" name="symptoms"></td>
+                        <td><input type="text" name="symptoms" id="symptoms"></td>
                     </tr>
                     <tr>
                         <td>Medicine</td>
-                        <td><input type="text" name="medicine"></td>
+                        <td><input type="text" name="medicine" id="medicine"></td>
                     </tr>
                     <tr>
                         <td>Prevention</td>
-                        <td><input type="text" name="prevention"></td>
+                        <td><input type="text" name="prevention" id="prevention"></td>
                     </tr>
                     <tr>
                         <td>Reference</td>
-                        <td><input type="text" name="dname"></td>
+                        <td><input type="text" name="ref" id="ref"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" name="Uplode" value="uplode" id="dis_b"></td>
                     </tr>
                 </table>
             </form>
         </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script type="text/javascript" src="js/uploadpost.js"></script>
     </body>
 </html>
