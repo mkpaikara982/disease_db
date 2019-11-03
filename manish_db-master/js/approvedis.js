@@ -13,7 +13,7 @@ render=()=>{
             <button onclick="approve(${val.did})">Approve</button>
             <button onclick="reject(${val.did})">Reject</button>
             <button onclick="del(${val.did})">Delete</button>
-            <button onclick="modify(${val})">Modify</button>
+            
 
             <br><br><br>
         </div>`
@@ -23,6 +23,15 @@ render=()=>{
 }
 
 render()
+
+// modi=(val)=>{
+//     console.log(val)
+//     // document.getElementById("showDiseases").innerHTML+=`
+//     // <div>
+//     //  <p>Hello world</p>   
+//     // </div>
+//     // `
+// }
 
 approve=(did)=>{
     console.log("approved")

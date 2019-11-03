@@ -15,7 +15,7 @@ document.querySelector('#login_b') && document.querySelector('#login_b').addEven
         
         user.forEach((val, ind) => {
             if (val.email === u && val.password === p ) {
-                window.location.href = "upload.html"; // ander k page ka link 
+                window.location.href = "arrove_dis.html"; // ander k page ka link 
             }
         })
     })
