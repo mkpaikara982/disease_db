@@ -8,7 +8,7 @@ document.querySelector('#reg_b').addEventListener('click',(e)=>{
 
     let new_user = {username: name, password:pass,age:Number(age),email:email,education:edu,university:uni}
 
-    axios.post('https://localhost:3000/users',new_user,{
+    axios.post('http://localhost:3000/users',new_user,{
         headers:{
             'Content-type':'application/json'
         }
